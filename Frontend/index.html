@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>CampusCopilot AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>CampusCopilot AI</h1>
+
+    <p class="subtitle">
+        Your AI-powered Agentic Web Assistant
+    </p>
+
+    <div class="categories">
+
+        <button onclick="quickSearch('Java internships')">
+            Internships
+        </button>
+
+        <button onclick="quickSearch('Engineering scholarships')">
+            Scholarships
+        </button>
+
+        <button onclick="quickSearch('Software jobs')">
+            Jobs
+        </button>
+
+        <button onclick="quickSearch('Coding contests')">
+            Coding Contests
+        </button>
+
+    </div>
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="userInput"
+            placeholder="Search internships, jobs, scholarships..."
+        >
+
+        <button onclick="sendMessage()">
+            Search
+        </button>
+
+    </div>
+
+    <div id="output"></div>
+    <h2>Search History</h2>
+
+<div id="history"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
